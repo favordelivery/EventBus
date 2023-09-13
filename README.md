@@ -18,6 +18,12 @@ EventBus...
  * is proven in practice by apps with 1,000,000,000+ installs
  * has advanced features like delivery threads, subscriber priorities, etc.
 
+Favor modifications
+-------------------
+1. `eventbus-annnotation-processor` was modified to not conflict with `hilt. `eventbus-annnotation-processor`-only 
+is published to the repositories packages maven repo. Consuming applications should be updated to add this repo's
+packages and update version for `eventbus-annnotation-processor` artifact. Publishing is manual.
+
 EventBus in 3 steps
 -------------------
 1. Define events:
